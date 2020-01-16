@@ -1,0 +1,19 @@
+touch config.txt //建立檔案
+git add project.txt //unstaged changes -> staged changes
+git reset project.txt //staged changes -> unstaged changes
+git status //狀態
+git commit -m "Create project" //建立節點
+git log //顯示查詢節點
+git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+//^讓節點顯示比較乾淨
+git branch //顯示branch
+git checkout -b login //切換節點
+mkdir login //新增資料夾
+cd login/ //切換工作目錄到資料夾裡
+cd .. //回到上一層目錄
+git checkout master //回到master
+git merge login --no-ff //建立連結要在master branch (會進道存指令的畫面
+:wq //先按ESC 存檔並退出
+git push
+git pull
+git diff //顯示更動檔案
